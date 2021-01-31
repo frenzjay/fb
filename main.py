@@ -94,7 +94,7 @@ if __name__ == '__main__':
         extractFrames()
     else:
         pass
-    schedule.every().hour.do(post).run()
+    schedule.every(5).seconds.do(post).run()
 #   Uncomment line 99 and comment line 97 in order to enable burst mode    
 #   schedule.every().hour.do(burst).run()
     while 1:
